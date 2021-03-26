@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "tarea77bf09793": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

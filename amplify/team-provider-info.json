@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tarea7-dev-182627-authRole",
+      "UnauthRoleArn": "arn:aws:iam::764688625648:role/amplify-tarea7-dev-182627-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::764688625648:role/amplify-tarea7-dev-182627-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-tarea7-dev-182627-deployment",
+      "UnauthRoleName": "amplify-tarea7-dev-182627-unauthRole",
+      "StackName": "amplify-tarea7-dev-182627",
+      "StackId": "arn:aws:cloudformation:us-east-2:764688625648:stack/amplify-tarea7-dev-182627/e9998f30-8dc9-11eb-b507-0265b0cf9604",
+      "AmplifyAppId": "d2pyaabb31q0zs"
+    }
+  },
+  "tarea": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tarea7-tarea-192828-authRole",
+      "UnauthRoleArn": "arn:aws:iam::764688625648:role/amplify-tarea7-tarea-192828-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::764688625648:role/amplify-tarea7-tarea-192828-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-tarea7-tarea-192828-deployment",
+      "UnauthRoleName": "amplify-tarea7-tarea-192828-unauthRole",
+      "StackName": "amplify-tarea7-tarea-192828",
+      "StackId": "arn:aws:cloudformation:us-east-2:764688625648:stack/amplify-tarea7-tarea-192828/92b29dc0-8dd2-11eb-a7cb-027d42c0beec",
+      "AmplifyAppId": "d2pyaabb31q0zs"
+    },
+    "categories": {
+      "auth": {
+        "tarea77bf09793": {}
+      }
+    }
+  }
+}
