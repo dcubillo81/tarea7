@@ -10,7 +10,7 @@ import SCLAlertView
 import Amplify
 
 struct OTPView: View {
-    @State var number = Int.random(in: 0..<999999)
+    @State var number = Int.random(in: 100000..<999999)
     @State var timeRemaining: Float = 60.0
     @State var progress: Float = 1.0
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -18,7 +18,11 @@ struct OTPView: View {
     
     var body: some View {
         VStack{
-            Text(("\(number)"))
+            Text("Su código nuevo es:")
+            .font(.headline)
+            .foregroundColor(.blue)
+            
+            Text(String(format: "%06d", number))
             .font(.largeTitle)
             .textContentType(.creditCardNumber)
             .onReceive(timer) { _ in

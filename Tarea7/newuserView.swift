@@ -42,7 +42,7 @@ struct newuserView: View {
                 .autocapitalization(.none)
             
             
-            Button(action: signUp) {
+            Button(action: registro) {
                 HStack(alignment: .center) {
                     Spacer()
                     Text("Registrar nuevo usuario").foregroundColor(Color.white)
@@ -51,6 +51,22 @@ struct newuserView: View {
                 }.padding().background(Color.red).cornerRadius(4.0)
         }//VStack
     }//View
+    
+    func registro(){
+        if username==""{
+            SCLAlertView().showError("Error", subTitle: "Falta el nombre de usuario") // Error
+        }else{
+            if password == ""{
+                SCLAlertView().showError("Error", subTitle: "Falta el password") // Error
+            }else{
+                if email==""{
+                    SCLAlertView().showError("Error", subTitle: "Falta el correo") // Error
+                }else{
+                    signUp()
+                }
+            }
+        }
+    }//registro
     
     func signUp() {
         let userAttributes = [AuthUserAttribute(.email, value: email)]
